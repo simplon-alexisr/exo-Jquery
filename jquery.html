@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <title>Test J-Query</title>
+  </head>
+  <body>
+    <form id="form">
+  		<div id="login">
+        <label for="login">Login :</label><br/>
+        <input type="text" id="login" placeholder="Entrez votre login"></input><br/>
+      </div>
+  		<div id="mdp">
+        <label for="pwd">Mot de passe :</label><br/>
+        <input type="password" id="pwd" placeholder="Entrez votre mot de passe"  pattern=".{5,}[0-9a-zA-Z]"></input><br/><br/>
+      </div>
+  		<a href="#" id="oublimdp">Mot de passe oublié</a><br><br/><br/>
+  		<div id="mail">
+        <label for="mail">Email :</label><br/>
+        <input type="email" id="mail" placeholder="Entrez votre addresse mail"></input><br/><br/>
+        <a href="#" id="bouton2">Retour au Formulaire</a><br><br/><br/>
+      </div>
+      <div id="check">
+        <input type="checkbox">Accepter les conditions d'utilisateurs</input><br/><br/>
+      </div>
+      <input type="submit" id="bouton" value="Envoyer"></input>
+  	</form>
+    <br/>
+  	<div id="error">Identification incorrecte</div>
+    <script src='jquery.js'></script>
+  </body>
+</html>
